@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form.css/form.css" type="text/css" media="screen">
+    <title>Formulário</title>
+</head>
+
+<body>
+    <div>
+        <h1 id="título">Cadastro de Desenvolvedor</h1>
+        <p id="subtítulo">Complete suas informações</p>
+    </div>
+
+    <form>
+        <fieldset class="grupo">
+            <div class="campo">
+                <label for="nome"><strong>Nome</strong></label>
+                <input type="text" name="nome" id="nome" required>
+            </div>
+
+            <div class="campo">
+                <label for="nome"><strong>Sobrenome</strong></label>
+                <input type="text" name="sobrenome" id="sobrenome" required>
+            </div>
+        </fieldset>
+
+        <div class="campo">
+            <label for="email"><strong>Email</strong></label>
+            <input type="email" name="email" id="email" required>
+        </div>
+
+        <div class="campo">
+            <label><strong>De qual lado da aplicação você desenvolve?</strong></label>
+            <label>
+                <input type="radio" name="devweb" value="frontend" checked>Front-end
+            </label>
+            <label>
+                <input type="radio" name="devweb" value="backend">Back-end
+            </label>
+            <label>
+                <input type="radio" name="devweb" value="fullstack">FullStack
+            </label>
+        </div>
+
+        <div class="campo">
+            <label for="senioridade"><strong>Senioridade</strong></label>
+            <select id="senioridade">
+                <option selected desabled value="">Selecione</option>
+                <option>Estagiário</option>
+                <option>Junior</option>
+                <option>Pleno</option>
+                <option>Senior</option>
+            </select>
+        </div>
+
+        <fieldset class="grupo">
+            <div id="check">
+                <label><strong>Selecione as tecnologias que utliza</strong></label><br><br>
+                <input type="checkbox" id="tecnologia1" name="tecnologia1" value="HTML">
+                <label for="tecnologia1">HTML</label>
+                <input type="checkbox" id="tecnologia2" name="tecnologia2" value="CSS">
+                <label for="tecnologia2">CSS</label>
+                <input type="checkbox" id="tecnologia3" name="tecnologia3" value="JAVASCRIPT">
+                <label for="tecnologia3">JAVASCRIPT</label>
+                <input type="checkbox" id="tecnologia4" name="tecnologia4" value="PHP">
+                <label for="tecnologia4">PHP</label>
+                <input type="checkbox" id="tecnologia5" name="tecnologia5" value="C++">
+                <label for="tecnologia5">C++</label>
+                <input type="checkbox" id="tecnologia6" name="tecnologia6" value="C#">
+                <label for="tecnologia6">C#</label>
+                <input type="checkbox" id="tecnologia7" name="tecnologia6" value="PYTHON">
+                <label for="tecnologia7">PYTHON</label>
+                <input type="checkbox" id="tecnologia8" name="tecnologia7" value="JAVA">
+                <label for="tecnologia8">JAVA</label>
+                <input type="checkbox" id="tecnologia9" name="tecnologia9" value="RUBY">
+                <label for="tecnologia9">RUBY</label>
+            </div>
+        </fieldset>
+
+        <div class="campo">
+            <br>
+            <label><strong>Comente um pouco sobre sua experiência na área</strong></label>
+            <textarea row="10" style="width: 26em;" id="experiência" name="experiência"></textarea>
+        </div>
+
+        <button class="botao" type="submit" onsubmit="">Concluído</button>  
+
+    </form>
+
+</body>
+
+</html>
